@@ -7,10 +7,9 @@ analyzer:
  plugins:
   - custom_lint
 
-custom_lint:
-  debugger: false
-  enable_all_lint_rules: false
-  rules:
-    - clean_architecture_lint
-  errors:
-    - clean_architecture_lint: warning
+# custom_lint:
+#   enable_all_lint_rules: false
+#   rules:
+#     - clean_architecture_lint
+#   errors:
+#     - clean_architecture_lint: warning

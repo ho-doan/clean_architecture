@@ -30,6 +30,7 @@ class HihiRepositoryImlp extends HihiRepository {
   @override
   Future<Either<String, HihiModel>> get(String id) async {
     try {
+      const a = 4;
       // final resultRemote = await _remoteDataSource.get(id);
       // final resultLocal = await _localDataSource.get(id);
       // final data = resultRemote.data;
