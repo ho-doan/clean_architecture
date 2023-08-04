@@ -125,7 +125,6 @@ class RepositoryLintCode extends DartLintRule {
     CustomLintContext context,
   ) {
     context.registry.addVariableDeclaration((node) {
-      print('${node._type} ${node._name} ${node._value}');
       if (resolver._isDsFile) {
         if (node._name.checkNameRepo ||
             node._value.checkNameRepo ||
