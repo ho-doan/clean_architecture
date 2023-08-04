@@ -1,9 +1,16 @@
 import 'package:dartz/dartz.dart';
+import 'package:example/hihi/data/local_data_sources/hihi_local_data_source.dart';
+import 'package:example/hihi/domain/repositories/hihi_repository.dart';
 import '../models/models.dart';
 
 class HihiRemoteDataSource {
-  HihiRemoteDataSource(/*this._apiClient*/);
+  HihiRemoteDataSource(/*this._apiClient*/)
+      : ggg = HihiRepositoryImlp(
+          HihiRemoteDataSource(),
+          HihiLocalDataSource(),
+        );
   // final ApiClient _apiClient;
+  final HihiRepositoryImlp ggg;
 
   Future<Either<String, HihiModel>> get(String id) async {
     try {

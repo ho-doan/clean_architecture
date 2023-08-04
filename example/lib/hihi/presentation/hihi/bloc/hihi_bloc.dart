@@ -1,3 +1,4 @@
+import 'package:example/hihi/data/remote_data_sources/hihi_remote_data_source.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
 import '../../../domain/use_case/hihi_use_case.dart';
@@ -32,4 +33,5 @@ class HihiBloc extends Bloc<HihiEvent, HihiState> {
 
   // ignore: unused_field
   final HihiUseCase _useCase;
+  late HihiRemoteDataSource remoteDataSource;
 }

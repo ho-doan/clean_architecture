@@ -1,3 +1,7 @@
+## 0.0.5
+
+- Add Rule Cubits
+
 ## 0.0.4
 
 - Add Rule DataSource
