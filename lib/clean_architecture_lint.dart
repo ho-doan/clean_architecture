@@ -7,8 +7,7 @@ import 'package:custom_lint_builder/custom_lint_builder.dart';
 // }
 
 final RegExp _regisGetIt = RegExp(r'/^.*getit.*$');
-final RegExp _regisApi = RegExp(r'/^.*api.*$');
-final RegExp _reClient = RegExp(r'/^.*client.*$');
+final RegExp _regisApi = RegExp(r'/^.*apiclient.*$');
 final RegExp _regisUseCase = RegExp(r'/^.*usecase.*$');
 final RegExp _regisRepo = RegExp(r'/^.*repository.*$');
 final RegExp _regisDs = RegExp(r'/^.*datasource.*$');
@@ -21,8 +20,7 @@ const String _repoMess = 'This is not Repository';
 const String _dsMess = 'This is not DataSource';
 
 const String _getIt = 'getit';
-const String _api = 'api';
-const String _client = 'client';
+const String _api = 'apiclient';
 const String _useCase = 'usecase';
 const String _useCaseFile = 'use_case';
 const String _repository = 'repository';
@@ -54,8 +52,7 @@ extension StringX on String {
   bool get _isUseCaseFile => low.contains(_useCaseFile);
   bool get _isApi => low.contains(_api) || _regisApi.hasMatch(low);
   bool get _isGetIt => low.contains(_getIt) || _regisGetIt.hasMatch(low);
-  bool get _isClient => low.contains(_client) || _reClient.hasMatch(low);
-  bool get _isApiClient => _isApi || _isClient;
+  bool get _isApiClient => _isApi;
   bool get _isUseCase => low.contains(_useCase) || _regisUseCase.hasMatch(low);
   bool get _isRepo => low.contains(_repository) || _regisRepo.hasMatch(low);
   bool get _isDs => low.contains(_ds) || _regisDs.hasMatch(low);
@@ -189,11 +186,20 @@ class BlocLintCode extends DartLintRule {
     CustomLintContext context,
   ) {
     context.registry.addVariableDeclaration((node) {
+      print(_regisApi.hasMatch(node._value.low));
+      print(_regisDs.hasMatch(node._value.low));
+      print(_regisGetIt.hasMatch(node._value.low));
       if (resolver._isPres) {
         if (node._name.checkNamePres ||
             node._value.checkNamePres ||
             node._type.checkNamePres) {
-          reporter.reportErrorForNode(code, node);
+          reporter.reportErrorForNode(
+              LintCode(
+                name: _lintLib,
+                problemMessage:
+                    'This is not DataSource ${node._value._isDs} ${node._value._isRepo} ${node._value._isGetIt} ${node._value._isApiClient}',
+              ),
+              node);
         }
       }
     });
