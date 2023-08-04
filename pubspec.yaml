@@ -15,9 +15,15 @@ platforms:
   windows:
 
 dependencies:
-  analyzer: ^6.0.0
-  analyzer_plugin: ^0.11.3
-  custom_lint_builder: ^0.5.1
+  analyzer: ^5.7.1
+  custom_lint_builder: ^0.3.2
+  # analyzer: ^5.13.0
+  # analyzer_plugin: ^0.11.2
+  # analyzer: ^6.0.0
+  # analyzer_plugin: ^0.11.3
+  # custom_lint_builder: ^0.5.1
 dev_dependencies:
-  custom_lint: ^0.5.1
+  cli_util: ^0.3.5
+  # custom_lint: ^0.5.1
+  custom_lint: ^0.3.2
   lints: ^2.1.1
