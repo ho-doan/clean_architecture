@@ -11,6 +11,6 @@ custom_lint:
   debugger: false
   enable_all_lint_rules: false
   rules:
-    - clean_architecture
+    - clean_architecture_lint
   errors:
-    - clean_architecture: warning
+    - clean_architecture_lint: warning

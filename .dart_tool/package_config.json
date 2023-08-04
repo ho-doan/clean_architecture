@@ -254,13 +254,13 @@
       "languageVersion": "2.19"
     },
     {
-      "name": "clean_architecture",
+      "name": "clean_architecture_lint",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-08-04T03:20:10.600676Z",
+  "generated": "2023-08-04T03:24:48.469802Z",
   "generator": "pub",
   "generatorVersion": "3.0.0"
 }

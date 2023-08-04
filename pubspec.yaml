@@ -1,4 +1,4 @@
-name: clean_architecture
+name: clean_architecture_lint
 description: Custom lints rules used in Clean Architecture.
 homepage: https://github.com/ho-doan/clean_architecture
 repository: https://github.com/ho-doan/clean_architecture
@@ -15,8 +15,8 @@ platforms:
   windows:
 
 dependencies:
-  analyzer:
-  analyzer_plugin:
+  analyzer: ^5.12.0
+  analyzer_plugin: ^0.11.2
   custom_lint_builder: ^0.5.0
 dev_dependencies:
   custom_lint:

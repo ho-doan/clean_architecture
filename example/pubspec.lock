@@ -81,7 +81,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.1.0"
-  clean_architecture:
+  clean_architecture_lint:
     dependency: "direct dev"
     description:
       path: ".."
