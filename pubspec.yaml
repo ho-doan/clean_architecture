@@ -2,9 +2,9 @@ name: clean_architecture_lint
 description: Custom lints rules used in Clean Architecture.
 homepage: https://github.com/ho-doan/clean_architecture
 repository: https://github.com/ho-doan/clean_architecture
-version: 0.0.1
+version: 0.0.2
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: '>=2.17.0 <3.0.0'
 
 platforms:
   android:
@@ -15,9 +15,9 @@ platforms:
   windows:
 
 dependencies:
-  analyzer: ^5.12.0
-  analyzer_plugin: ^0.11.2
-  custom_lint_builder: ^0.5.0
+  analyzer: ^6.0.0
+  analyzer_plugin: ^0.11.3
+  custom_lint_builder: ^0.5.1
 dev_dependencies:
-  custom_lint:
-  lints: ^2.0.0
+  custom_lint: ^0.5.1
+  lints: ^2.1.1

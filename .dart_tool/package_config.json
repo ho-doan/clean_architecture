@@ -3,21 +3,21 @@
   "packages": [
     {
       "name": "_fe_analyzer_shared",
-      "rootUri": "file:///Users/doanho/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-60.0.0",
+      "rootUri": "file:///Users/doanho/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-62.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.0"
     },
     {
       "name": "analyzer",
-      "rootUri": "file:///Users/doanho/.pub-cache/hosted/pub.dev/analyzer-5.12.0",
+      "rootUri": "file:///Users/doanho/.pub-cache/hosted/pub.dev/analyzer-6.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.0"
     },
     {
       "name": "analyzer_plugin",
-      "rootUri": "file:///Users/doanho/.pub-cache/hosted/pub.dev/analyzer_plugin-0.11.2",
+      "rootUri": "file:///Users/doanho/.pub-cache/hosted/pub.dev/analyzer_plugin-0.11.3",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.0"
     },
     {
       "name": "args",
@@ -75,21 +75,27 @@
     },
     {
       "name": "custom_lint",
-      "rootUri": "file:///Users/doanho/.pub-cache/hosted/pub.dev/custom_lint-0.5.0",
+      "rootUri": "file:///Users/doanho/.pub-cache/hosted/pub.dev/custom_lint-0.5.1",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.0"
     },
     {
       "name": "custom_lint_builder",
-      "rootUri": "file:///Users/doanho/.pub-cache/hosted/pub.dev/custom_lint_builder-0.5.0",
+      "rootUri": "file:///Users/doanho/.pub-cache/hosted/pub.dev/custom_lint_builder-0.5.1",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
       "name": "custom_lint_core",
-      "rootUri": "file:///Users/doanho/.pub-cache/hosted/pub.dev/custom_lint_core-0.5.0",
+      "rootUri": "file:///Users/doanho/.pub-cache/hosted/pub.dev/custom_lint_core-0.5.1",
       "packageUri": "lib/",
       "languageVersion": "2.19"
+    },
+    {
+      "name": "dart_internal",
+      "rootUri": "file:///Users/doanho/.pub-cache/hosted/pub.dev/dart_internal-0.2.9",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "dart_style",
@@ -257,10 +263,10 @@
       "name": "clean_architecture_lint",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "2.17"
     }
   ],
-  "generated": "2023-08-04T03:24:48.469802Z",
+  "generated": "2023-08-04T03:37:45.394789Z",
   "generator": "pub",
   "generatorVersion": "3.0.0"
 }
