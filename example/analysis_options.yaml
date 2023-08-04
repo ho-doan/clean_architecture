@@ -1,0 +1,16 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+
+analyzer:
+ plugins:
+  - custom_lint
+
+custom_lint:
+  debugger: false
+  enable_all_lint_rules: false
+  rules:
+    - clean_architecture
+  errors:
+    - clean_architecture: warning
