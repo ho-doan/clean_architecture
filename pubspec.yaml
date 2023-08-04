@@ -1,7 +1,7 @@
 name: clean_architecture
 description: Custom lints rules used in Clean Architecture.
-# homepage: https://github.com/Supernova-Studio/supernova-lints
-# repository: https://github.com/Supernova-Studio/supernova-lints
+homepage: https://github.com/ho-doan/clean_architecture
+repository: https://github.com/ho-doan/clean_architecture
 version: 0.0.1
 environment:
   sdk: '>=3.0.0 <4.0.0'
