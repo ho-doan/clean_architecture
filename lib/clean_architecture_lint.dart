@@ -186,9 +186,6 @@ class BlocLintCode extends DartLintRule {
     CustomLintContext context,
   ) {
     context.registry.addVariableDeclaration((node) {
-      print(_regisApi.hasMatch(node._value.low));
-      print(_regisDs.hasMatch(node._value.low));
-      print(_regisGetIt.hasMatch(node._value.low));
       if (resolver._isPres) {
         if (node._name.checkNamePres ||
             node._value.checkNamePres ||
@@ -196,8 +193,7 @@ class BlocLintCode extends DartLintRule {
           reporter.reportErrorForNode(
               LintCode(
                 name: _lintLib,
-                problemMessage:
-                    'This is not DataSource ${node._value._isDs} ${node._value._isRepo} ${node._value._isGetIt} ${node._value._isApiClient}',
+                problemMessage: 'This is not DataSource',
               ),
               node);
         }
