@@ -2,7 +2,9 @@
 // import 'package:analyzer/error/listener.dart';
 import 'package:custom_lint_builder/custom_lint_builder.dart';
 
-import 'rules/base_rule.dart';
+import 'rules/class_rule.dart';
+import 'rules/file_rule.dart';
+import 'rules/folder_rule.dart';
 
 // void main(List<String> args, SendPort sendPort) {
 //   startPlugin(sendPort, _CleanArchitecture());
@@ -75,6 +77,8 @@ class _CleanArchitectureLint extends PluginBase {
   @override
   List<LintRule> getLintRules(CustomLintConfigs configs) => [
         FolderNameCode(),
+        FileRuleCode(),
+        ClassRuleCode(),
       ];
 
   @override
