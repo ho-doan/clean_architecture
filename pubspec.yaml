@@ -1,4 +1,4 @@
-name: clean_architecture_lint
+name: sugi_lint
 description: Custom lints rules used in Clean Architecture.
 homepage: https://github.com/ho-doan/clean_architecture
 repository: https://github.com/ho-doan/clean_architecture
@@ -15,15 +15,16 @@ platforms:
   windows:
 
 dependencies:
-  analyzer: ^5.7.1
-  custom_lint_builder: ^0.3.2
+  analyzer: ^6.4.1
+  change_case: ^2.0.1
+  custom_lint_builder: ^0.6.4
   # analyzer: ^5.13.0
   # analyzer_plugin: ^0.11.2
   # analyzer: ^6.0.0
   # analyzer_plugin: ^0.11.3
   # custom_lint_builder: ^0.5.1
 dev_dependencies:
-  cli_util: ^0.3.5
+  cli_util: ^0.4.1
   # custom_lint: ^0.5.1
-  custom_lint: ^0.3.2
-  lints: ^2.1.1
+  custom_lint: ^0.6.4
+  lints: ^3.0.0
